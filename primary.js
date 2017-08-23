@@ -1,3 +1,5 @@
+/* eslint-env jquery */
+
 $(document).ready(function()
 {
 	$("#BTN01").on("click", function()
@@ -9,11 +11,19 @@ $(document).ready(function()
 		var WB05 = document.getElementById("WB05")
 		var PB00 = document.getElementById("PB00")
 		
-		$(WB01).val((Math.ceil(Math.random() * 69 )));
+		var array1 = [WB01, WB02, WB03, WB04, WB05];
+		
+		$(array1).each(function(i, element)
+		{
+			element = Math.ceil(Math.random() * 69 );
+			console.log(element);
+		});
+		
+		$/*(WB01).val((Math.ceil(Math.random() * 69 )));
 		$(WB02).val((Math.ceil(Math.random() * 69 )));
 		$(WB03).val((Math.ceil(Math.random() * 69 )));
 		$(WB04).val((Math.ceil(Math.random() * 69 )));
 		$(WB05).val((Math.ceil(Math.random() * 69 )));
-		$(PB00).val((Math.ceil(Math.random() * 26 )));
+		$(PB00).val((Math.ceil(Math.random() * 26 )));*/
 	});
 });
