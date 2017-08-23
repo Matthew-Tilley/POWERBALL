@@ -2,15 +2,12 @@ $(document).ready(function()
 {
 	$("#BTN01").on("click", function()
 	{
-		var B1 = document.getElementById("PBN01")
-		var B2 = document.getElementById("PBN02")
+		var B1 = document.getElementById("WB01")
+		var B2 = document.getElementById("WB02")
 		
-		var all = [B1, B2];
+		var allof = [B1, B2];
 		
-		$.each(all, function(item)
-		{
-			$(item).val(Math.ceil(Math.random() * 69));
-		});
+		console.log($(allof).val());
 		
 		/*$("#PBN01").val(Math.ceil(Math.random()* 69));*/
 		
