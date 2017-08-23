@@ -10,9 +10,9 @@ body
 	
 }
 
-output
+input
 {
-	height:						15vh;
+	height:						10vh;
 	width:						15vw;
 	border:						2px solid black;
 	font-size: 					4rem;
