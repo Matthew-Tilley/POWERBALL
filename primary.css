@@ -10,10 +10,25 @@ body
 	
 }
 
-input
+.WHITEBALL
 {
-	height:						10vh;
-	width:						15vw;
+	width:						12vw;
+	text-align: 				center;
+	
 	border:						2px solid black;
-	font-size: 					3rem;
+	border-radius: 				50%;
 }
+
+.REDBALL
+{
+	width:						12vw;
+	text-align: 				center;
+	
+	border:						2px solid black;
+	border-radius: 				50%;
+	
+	background-color: 			red;
+	
+	color:						white;
+}
+
