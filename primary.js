@@ -7,7 +7,10 @@ $(document).ready(function()
 		
 		var all = [B1, B2];
 		
-		
+		$.each(all, function(item)
+		{
+			$(item).val(Math.ceil(Math.random() * 69));
+		});
 		
 		/*$("#PBN01").val(Math.ceil(Math.random()* 69));*/
 		
