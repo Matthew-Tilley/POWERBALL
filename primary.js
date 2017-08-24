@@ -9,10 +9,12 @@ function white_ball_randomizer()
 
 function checker(random_white)
 {
-	if (random_white > 0)
-	{
-		console.log("YAY");	
-	}
+	if (random_white != white_balls)
+		{
+			white_balls.push(random_white);
+			console.log(white_balls);
+		}
+	
 	
 }
 
