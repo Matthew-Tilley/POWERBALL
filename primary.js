@@ -1,29 +1,19 @@
-$(document).ready(function()
+
+var white_balls = [];
+
+function white_ball_randomizer()
 {
-	var collector = [];
-	
-	for (i=0; i<5; i++)
-	{
-		var random_white = Math.ceil( Math.random() * 69 );
-		
-		if (random_white != collector)
-		{
-			collector.push(random_white);
-			console.log(collector);
-		}
-		
-		
-	
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-});
+	var random_white = Math.ceil( Math.random() * 69 );
+	white_ball_checker();
+}
+
+
+
+function white_ball_checker(random_white)
+{
+	console.log("IT WORKS");
+}
+
+
+
+
