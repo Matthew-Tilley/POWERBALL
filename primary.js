@@ -4,16 +4,15 @@ var white_balls = [];
 function white_ball_randomizer()
 {
 	var random_white = Math.ceil( Math.random() * 69 );
-	white_ball_checker();
+	checker(random_white);
 }
 
-
-
-function white_ball_checker(random_white)
+function checker(random_white)
 {
-	console.log("IT WORKS");
+	if (random_white > 0)
+	{
+		console.log("YAY");	
+	}
+	
 }
-
-
-
 
