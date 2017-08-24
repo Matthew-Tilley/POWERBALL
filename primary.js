@@ -1,19 +1,18 @@
 $(document).ready(function()
 {
+	var collector = [];
 	
-	for (i=0; i<50000; i++)
+	for (i=0; i<5; i++)
 	{
 		var random_white = Math.ceil( Math.random() * 69 );
 		
-		if (random_white < 70)
+		if (random_white != collector)
 		{
-			console.log(random_white + " Yay!")
+			collector.push(random_white);
+			console.log(collector);
 		}
 		
-		else
-		{
-			console.log("PROBLEM");
-		}
+		
 	
 		
 	}
