@@ -9,18 +9,8 @@ function white_ball_randomizer()
 
 function checker(random_white)
 {
-	$(document).ready(function()
-	{
-		$.each(white_balls, function(i, el)
-		{
-			if (random_white != white_balls[el])
-			{
-				console.log(random_white);
-				white_balls.push(random_white);				
-			}
-				
-		});
-	});
+	
+	
 	
 }
 
