@@ -1,5 +1,5 @@
 
-var white_balls = [];
+var white_balls = [36, 44];
 
 function white_ball_randomizer()
 {
@@ -9,18 +9,12 @@ function white_ball_randomizer()
 
 function checker(random_white)
 {
-	var test = random_white % 2;
-	
-	if (test == 0)
+	white_balls.forEach(function(el,i)
 	{
-		console.log("EVEN");
-	}
-	
-	else
-	{
-		console.log("ODD")
-	
-	}
+		if ( random_white != white_balls[el])
+		white_balls.push(random_white);
+		console.log(white_balls);
+	});
 
 	
 }
