@@ -9,12 +9,20 @@ function white_ball_randomizer()
 
 function checker(random_white)
 {
-	if (random_white != white_balls)
+	$(document).ready(function()
+	{
+		$.each(white_balls, function(i, el)
 		{
-			white_balls.push(random_white);
-			console.log(white_balls);
-		}
-	
+			if (random_white != white_balls[el])
+			{
+				console.log(random_white);
+				white_balls.push(random_white);				
+			}
+				
+		});
+	});
 	
 }
+
+console.log(white_balls);
 
