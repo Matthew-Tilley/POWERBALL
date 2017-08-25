@@ -9,8 +9,19 @@ function white_ball_randomizer()
 
 function checker(random_white)
 {
+	var test = random_white % 2;
 	
+	if (test == 0)
+	{
+		console.log("EVEN");
+	}
 	
+	else
+	{
+		console.log("ODD")
+	
+	}
+
 	
 }
 
