@@ -1,23 +1,45 @@
 
-var white_balls = [36, 44];
+var white_balls = [];
 
 function white_ball_randomizer()
 {
+
 	var random_white = Math.ceil( Math.random() * 69 );
 	checker(random_white);
+
 }
 
 function checker(random_white)
 {
-	white_balls.forEach(function(el,i)
+	
+	if ( white_balls.length < 1 )
 	{
-		if ( random_white != white_balls[el])
 		white_balls.push(random_white);
 		console.log(white_balls);
-	});
-
+	}
+	
+	else 
+	{
+		while ( white_balls.length < 5 )
+		{
+			white_balls.forEach(function(element, index)
+			{
+				
+				if ( random_white != white_balls[element] )
+				{
+					white_balls.push(random_white);
+					white_ball_randomizer();
+				}
+					
+				else 
+				{
+					white_ball_randomizer();
+				}
+				
+			});
+			
+		}
+		
+	}	
 	
 }
-
-console.log(white_balls);
-
